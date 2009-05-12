@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{browser_stakeout}
-  s.version = "0.0.0"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Nathan Fixler"]
@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
     "LICENSE",
     "README.rdoc",
     "Rakefile",
+    "VERSION.yml",
     "bin/browser_stakeout",
     "lib/browser_stakeout.rb",
     "lib/browser_stakeout/application.rb",
