@@ -1,6 +1,14 @@
 = browser_stakeout
 
-Description goes here.
+Like RStakeout, but for watching static web content in multiple web browsers.
+
+Watch a set of files and open them in Safari and/or Firefox if they change. 
+The files should probably be plain HTML files, but I'm not the boss of you.
+Refreshes index.htm or index.html by default (if they exist)
+
+Inspired by AutoTest and RStakeout.
+http://nubyonrails.com/articles/automation-with-rstakeout
+
 
 == Copyright
 

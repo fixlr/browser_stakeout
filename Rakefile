@@ -5,7 +5,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "browser_stakeout"
-    gem.summary = %Q{RStakeout for watching static web content in multiple web browsers.}
+    gem.summary = %Q{Like RStakeout, but for watching static web content in multiple web browsers.}
     gem.email = "nathan@fixler.org"
     gem.homepage = "http://github.com/fixlr/browser_stakeout"
     gem.authors = ["Nathan Fixler"]

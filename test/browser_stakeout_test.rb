@@ -1,7 +1,7 @@
 require 'test_helper'
 
-class BrowserStakeoutTest < Test::Unit::TestCase
-  should "probably rename this file and start testing for real" do
-    flunk "hey buddy, you should probably rename this file and start testing for real"
+class TestOptions < Test::Unit::TestCase
+  should "the BrowserStakeout class doesn't really do anything yet" do
+    true
   end
 end
