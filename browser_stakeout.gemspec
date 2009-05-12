@@ -12,33 +12,35 @@ Gem::Specification.new do |s|
   s.executables = ["browser_stakeout"]
   s.extra_rdoc_files = [
     "LICENSE",
-    "README.rdoc"
+     "README.rdoc"
   ]
   s.files = [
-    "LICENSE",
-    "README.rdoc",
-    "Rakefile",
-    "VERSION.yml",
-    "bin/browser_stakeout",
-    "lib/browser_stakeout.rb",
-    "lib/browser_stakeout/application.rb",
-    "lib/browser_stakeout/options.rb",
-    "test/application_test.rb",
-    "test/browser_stakeout_test.rb",
-    "test/options_test.rb",
-    "test/test_helper.rb"
+    ".document",
+     ".gitignore",
+     "LICENSE",
+     "README.rdoc",
+     "Rakefile",
+     "VERSION.yml",
+     "bin/browser_stakeout",
+     "browser_stakeout.gemspec",
+     "lib/browser_stakeout.rb",
+     "lib/browser_stakeout/application.rb",
+     "lib/browser_stakeout/options.rb",
+     "test/application_test.rb",
+     "test/browser_stakeout_test.rb",
+     "test/options_test.rb",
+     "test/test_helper.rb"
   ]
-  s.has_rdoc = true
   s.homepage = %q{http://github.com/fixlr/browser_stakeout}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.2}
+  s.rubygems_version = %q{1.3.3}
   s.summary = %q{Like RStakeout, but for watching static web content in multiple web browsers.}
   s.test_files = [
     "test/application_test.rb",
-    "test/browser_stakeout_test.rb",
-    "test/options_test.rb",
-    "test/test_helper.rb"
+     "test/browser_stakeout_test.rb",
+     "test/options_test.rb",
+     "test/test_helper.rb"
   ]
 
   if s.respond_to? :specification_version then

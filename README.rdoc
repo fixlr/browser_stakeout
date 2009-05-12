@@ -9,6 +9,12 @@ Refreshes index.htm or index.html by default (if they exist)
 Inspired by AutoTest and RStakeout.
 http://nubyonrails.com/articles/automation-with-rstakeout
 
+=== Example
+		
+* refresh both (since safari is already enabled by default)
+		cd /to/your/project
+		browser_stakeout --firefox file.html
+
 
 == Copyright
 
