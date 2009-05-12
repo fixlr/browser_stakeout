@@ -33,6 +33,23 @@ class TestOptions < Test::Unit::TestCase
     end
   end
   
+  context "default options with file list" do
+    setup { setup_options("index.html", "news.html") }
+    
+    should "not be invalid" do
+      assert_nil @options[:invalid_argument]
+    end
+    
+    should "not show help" do
+      assert_nil @options[:show_help]
+    end
+    
+    should "still have two unused options" do
+      assert_equal 2, @options.files.length
+      assert_equal ['index.html', 'news.html'], @options.files
+    end
+  end
+  
   for_options '--firefox' do
     should 'refresh Firefox' do
       assert @options[:firefox]

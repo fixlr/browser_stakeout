@@ -14,18 +14,14 @@ class BrowserStakeout
           return 1
         end
         
-        unless arguments.size == 1
+        unless options.files.size >= 1
+          $stderr.puts "broken"
           $stderr.puts options.opts
           return 1
         end
 
-        files = {}
-        arguments.each do |a|
-          Dir[a].each do |file|
-            files[file] = File.mtime(file)
-          end
-        end
-        
+        files = build_mtimes_hash(options.files)
+
         trap('INT') do
           puts "\nIt's quittin time..."
           exit
@@ -52,6 +48,16 @@ class BrowserStakeout
             end
           end
         end
+      end
+
+      def build_mtimes_hash(arguments)
+        files = {}
+        arguments.each do |a|
+          Dir[a].each do |file|
+            files[file] = File.mtime(file)
+          end
+        end
+        files
       end
     end
   end

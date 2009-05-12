@@ -1,6 +1,6 @@
 class BrowserStakeout
   class Options < Hash
-    attr_reader :opts, :orig_args, :browsers
+    attr_reader :opts, :orig_args, :browsers, :files
     
     def initialize(args)
       super()
@@ -34,6 +34,7 @@ class BrowserStakeout
       
       begin
         @opts.parse!(args)
+        @files = args
       rescue OptionParser::InvalidOption => e
         self[:invalid_argument] = e.message
       end
