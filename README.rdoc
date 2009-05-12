@@ -1,0 +1,7 @@
+= browser_stakeout
+
+Description goes here.
+
+== Copyright
+
+Copyright (c) 2009 Nathan Fixler. See LICENSE for details.
