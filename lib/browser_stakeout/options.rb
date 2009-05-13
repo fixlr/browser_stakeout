@@ -9,7 +9,6 @@ class BrowserStakeout
       self[:safari]  = true
       self[:firefox] = false
       self[:index]   = "index\.htm[l]?"
-      self[:command] = "open -g"
       
       @opts = OptionParser.new do |o|
         o.banner = "Usage: #{File.basename($0)} [options] files-to-watch"
@@ -43,8 +42,8 @@ class BrowserStakeout
       # Decide which browsers need to be refreshed.
       # TODO: How can this be extended to include other browsers easily?
       @browsers = []
-      @browsers << "Safari.app" if self[:safari]
-      @browsers << "Firefox.app" if self[:firefox]
+      @browsers << BrowserStakeout::Browsers::Safari if self[:safari]
+      @browsers << BrowserStakeout::Browsers::Firefox if self[:firefox]
       raise "Zero browsers? Come on. Is that really what you want to do?" if @browsers.length == 0
     end
     

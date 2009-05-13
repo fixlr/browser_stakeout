@@ -44,7 +44,7 @@ class BrowserStakeout
             files[changed_file] = File.mtime(changed_file)
             puts "#{Time.now} => #{File.basename(changed_file)} changed"
             options.browsers.each do |b|
-              system("#{options[:command]} -a #{b} #{index_file||changed_file}")
+              system b.refresh(index_file||changed_file)
             end
           end
         end
